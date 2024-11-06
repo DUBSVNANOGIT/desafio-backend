@@ -61,8 +61,7 @@ resultado = [
     # utilizo a lógica de um for encadeado, primeiro para passar por cada objeto em response
     for i in response
     # segundo para passar por cada "produto" dentro de cada objeto
-    for j in i["produtos"]
+        for j in i["produtos"]
     # se o preço do produto for maior ou igual a 30, ele será adicionado no array resultado
-    if j["preço"] >= 30
+            if j["preço"] >= 30
 ]
-print(resultado)
